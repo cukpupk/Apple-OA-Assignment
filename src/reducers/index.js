@@ -1,4 +1,4 @@
-import { ADD_MOVIE, REMOVE_MOVIE, RECEIVE_DATA } from '../actions/constants';
+import { ADD_MOVIE, REMOVE_MOVIE, RECEIVE_DATA } from '../actions/ActionTypes';
 
 const defaultState = {
     mylist: [],
@@ -19,8 +19,6 @@ const Movie = (state = defaultState, action) => {
                 mylist: [...state.mylist,
                 ...state.recommendations.splice(index, 1)]
             }
-
-
         case REMOVE_MOVIE:
             // Use movie as the action payload
             const itemIds1 = state.mylist.map(item => item.id)
@@ -30,7 +28,6 @@ const Movie = (state = defaultState, action) => {
                 recommendations: [...state.recommendations,
                 ...state.mylist.splice(index1, 1)]
             }
-
         default:
             return state;
     }

@@ -10,7 +10,8 @@
   flex: 1 1 auto;
 }
 .Label {
-  background-color: blue;
+  background-color: rgb(147, 147, 172);
+  color: #61dafb
   font: 1em sans-serif;
 }
 .card-content {
@@ -45,13 +46,16 @@
 
 .button {
   border-radius: 10px; 
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   width: 100px;
   height: 25px;
   background-color: rgb(0, 255, 76);
 }
-
+.LogoSize {
+  width: 400px;
+  height: 300px;
+}
 .title {
   text-align: left; 
   margin-left: 50;
